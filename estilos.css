@@ -955,7 +955,7 @@
 /* ========== COLECCIÓN DESTACADA ========== */
 .collection-hero {
     background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
-    padding: 60px 20px;
+    padding: 40px 20px;
     position: relative;
     overflow: hidden;
 }
@@ -980,7 +980,7 @@
 }
 
 .collection-content {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -988,7 +988,7 @@
 
 .collection-image-wrapper {
     width: 100%;
-    height: 320px;
+    height: 300px;
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 30px;
@@ -1014,7 +1014,7 @@
 .collection-brand-logo {
     max-width: 120px;
     height: auto;
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
     display: block;
     filter: brightness(0) invert(1);
     opacity: 0.9;
@@ -1024,7 +1024,7 @@
     font-size: 28px;
     font-weight: 900;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     letter-spacing: 2px;
     font-family: 'Bebas Neue', 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -1034,7 +1034,7 @@
     color: #d0d0d0;
     font-size: 15px;
     line-height: 1.7;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
