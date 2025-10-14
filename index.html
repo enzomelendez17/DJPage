@@ -1,0 +1,613 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deportes Jimmy - Mobile</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+    <!-- ==================== TOP BANNER ==================== -->
+    <div class="top-banner">
+        <strong>¡Envío gratis en compras mayores a $50!</strong> Solo por tiempo limitado. <a href="#">Ver Ofertas</a>
+    </div>
+
+    <!-- ==================== MAIN HEADER ==================== -->
+    <header class="main-header">
+        <button class="menu-button" id="menuToggle" aria-label="Abrir menú">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+
+        <div class="logo-container">
+            <img src="logo.png" alt="Deportes Jimmy Logo">
+        </div>
+
+        <div class="header-icons">
+            <button class="icon-button" aria-label="Carrito de compras">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="cart-count">3</span>
+            </button>
+
+            <button class="icon-button" aria-label="Mi cuenta">
+                <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==================== SEARCH BAR ==================== -->
+    <div class="search-container">
+        <div class="search-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <input 
+                type="text" 
+                class="search-input" 
+                placeholder="¿Qué estás buscando?"
+                aria-label="Buscar productos"
+            >
+        </div>
+    </div>
+
+    <!-- ==================== MENÚ HORIZONTAL ==================== -->
+    <nav class="horizontal-menu">
+        <div class="menu-items">
+            <a href="#" class="menu-item">Gym y Fitness</a>
+            <a href="#" class="menu-item">Moda Deportiva</a>
+            <a href="#" class="menu-item">Deportes</a>
+            <a href="#" class="menu-item">Uniformes Personalizados</a>
+            <a href="#" class="menu-item">Lo Más Nuevo</a>
+            <a href="#" class="menu-item">Ofertas</a>
+        </div>
+    </nav>
+
+    <!-- ==================== SIDEBAR OVERLAY ==================== -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- ==================== SIDEBAR MENU ==================== -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-title">MENÚ</div>
+            <button class="close-sidebar" id="closeSidebar" aria-label="Cerrar menú">&times;</button>
+        </div>
+        
+<nav class="sidebar-content">
+    
+    <!-- GYM & FITNESS -->
+    <div class="category-main">
+        <div class="category-header">
+            <div class="category-icon-title">
+                <span class="category-icon">🏋️</span>
+                <span class="category-title">Gym & Fitness</span>
+            </div>
+            <span class="category-arrow">▼</span>
+        </div>
+        <div class="subcategories">
+            <!-- Crossfit y Entrenamiento Funcional -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Crossfit y Entrenamiento Funcional</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Kettlebells</a>
+                    <a href="#" class="sub-subcategory-link">Bolas Medicinales</a>
+                    <a href="#" class="sub-subcategory-link">Power Bags</a>
+                    <a href="#" class="sub-subcategory-link">Bandas y Resistencia</a>
+                    <a href="#" class="sub-subcategory-link">Sistema de Suspensión</a>
+                    <a href="#" class="sub-subcategory-link">Sogas de Saltar</a>
+                    <a href="#" class="sub-subcategory-link">Estructuras y Racks</a>
+                    <a href="#" class="sub-subcategory-link">Platos y Barras Olímpicas</a>
+                    <a href="#" class="sub-subcategory-link">Accesorios de Entrenamiento</a>
+                </div>
+            </div>
+            
+            <!-- Cardio y Acondicionamiento -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Cardio y Acondicionamiento</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Máquinas Cardiovasculares</a>
+                    <a href="#" class="sub-subcategory-link">Abs y Core</a>
+                    <a href="#" class="sub-subcategory-link">Colchonetas</a>
+                    <a href="#" class="sub-subcategory-link">Field Training</a>
+                    <a href="#" class="sub-subcategory-link">Pesas Corporales</a>
+                </div>
+            </div>
+            
+            <!-- Levantamiento de Pesas -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Levantamiento de Pesas</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Mancuernas</a>
+                    <a href="#" class="sub-subcategory-link">Correas y Straps de Soportes</a>
+                    <a href="#" class="sub-subcategory-link">Guantes de Levantamiento</a>
+                    <a href="#" class="sub-subcategory-link">Bancos de Pesas</a>
+                </div>
+            </div>
+            
+            <!-- Recuperación y Bienestar -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Recuperación y Bienestar</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Masaje y Recuperación</a>
+                    <a href="#" class="sub-subcategory-link">Soportes Deportivos</a>
+                    <a href="#" class="sub-subcategory-link">Sauna y Fajas</a>
+                </div>
+            </div>
+            
+            <!-- Yoga y Pilates -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Yoga y Pilates</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Bandas de Estiramiento</a>
+                    <a href="#" class="sub-subcategory-link">Balanceo y Estabilidad</a>
+                    <a href="#" class="sub-subcategory-link">Pull-Up & Push-Up</a>
+                    <a href="#" class="sub-subcategory-link">Bloques y Ladrillos</a>
+                    <a href="#" class="sub-subcategory-link">Mats</a>
+                    <a href="#" class="sub-subcategory-link">Accesorios</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ROPA -->
+    <div class="category-main">
+        <div class="category-header">
+            <div class="category-icon-title">
+                <span class="category-icon">👕</span>
+                <span class="category-title">Ropa</span>
+            </div>
+            <span class="category-arrow">▼</span>
+        </div>
+        <div class="subcategories">
+            <!-- Uniformes Deportivos -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Uniformes Deportivos</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Beisbol Funcional</a>
+                    <a href="#" class="sub-subcategory-link">Futbol</a>
+                    <a href="#" class="sub-subcategory-link">Baloncesto</a>
+                    <a href="#" class="sub-subcategory-link">Nacionales</a>
+                    <a href="#" class="sub-subcategory-link">Técnicas de Personalización</a>
+                </div>
+            </div>
+            
+            <a href="#" class="category-simple">Gorras</a>
+            <a href="#" class="category-simple">Accesorios</a>
+            
+            <!-- Niños -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Niños</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Camisetas</a>
+                    <a href="#" class="sub-subcategory-link">Pantalones y Shorts</a>
+                </div>
+            </div>
+            
+            <!-- Niñas -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Niñas</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Camisetas y Tops</a>
+                    <a href="#" class="sub-subcategory-link">Leggins</a>
+                    <a href="#" class="sub-subcategory-link">Faldas y Shorts</a>
+                </div>
+            </div>
+            
+            <!-- Hombres -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Hombres</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Camisetas</a>
+                    <a href="#" class="sub-subcategory-link">Pantalones</a>
+                    <a href="#" class="sub-subcategory-link">Shorts</a>
+                    <a href="#" class="sub-subcategory-link">Chaquetas</a>
+                    <a href="#" class="sub-subcategory-link">Medias y Boxers</a>
+                </div>
+            </div>
+            
+            <!-- Mujeres -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Mujeres</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Camisetas</a>
+                    <a href="#" class="sub-subcategory-link">Top Deportivos</a>
+                    <a href="#" class="sub-subcategory-link">Bra Deportivos</a>
+                    <a href="#" class="sub-subcategory-link">Leggins y Pantalones</a>
+                    <a href="#" class="sub-subcategory-link">Shorts y Skorts</a>
+                    <a href="#" class="sub-subcategory-link">Vestidos Deportivos</a>
+                    <a href="#" class="sub-subcategory-link">Chaquetas y Hoodies</a>
+                    <a href="#" class="sub-subcategory-link">Medias</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CALZADO -->
+    <div class="category-main">
+        <div class="category-header">
+            <div class="category-icon-title">
+                <span class="category-icon">👟</span>
+                <span class="category-title">Calzado</span>
+            </div>
+            <span class="category-arrow">▼</span>
+        </div>
+        <div class="subcategories">
+            <!-- Hombres -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Hombres</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Deportivas y Casuales</a>
+                    <a href="#" class="sub-subcategory-link">Futbol</a>
+                    <a href="#" class="sub-subcategory-link">Beisbol y Softbol</a>
+                    <a href="#" class="sub-subcategory-link">Boxeo</a>
+                    <a href="#" class="sub-subcategory-link">Sandalias</a>
+                </div>
+            </div>
+            
+            <!-- Mujeres -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Mujeres</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Deportivas y Casuales</a>
+                    <a href="#" class="sub-subcategory-link">Boxeo</a>
+                    <a href="#" class="sub-subcategory-link">Sandalias</a>
+                </div>
+            </div>
+            
+            <!-- Jóvenes y Niños -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Jóvenes y Niños</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Deportivas y Casuales</a>
+                    <a href="#" class="sub-subcategory-link">Futbol</a>
+                </div>
+            </div>
+            
+            <!-- Havaianas -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Havaianas</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Hombres</a>
+                    <a href="#" class="sub-subcategory-link">Mujeres</a>
+                    <a href="#" class="sub-subcategory-link">Niños</a>
+                    <a href="#" class="sub-subcategory-link">Unisex</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEPORTES -->
+    <div class="category-main">
+        <div class="category-header">
+            <div class="category-icon-title">
+                <span class="category-icon">⚽</span>
+                <span class="category-title">Deportes</span>
+            </div>
+            <span class="category-arrow">▼</span>
+        </div>
+        <div class="subcategories">
+            <!-- Beisbol -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Beisbol</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Accesorios</a>
+                    <a href="#" class="sub-subcategory-link">Beisbol Nacional</a>
+                    <a href="#" class="sub-subcategory-link">Bates</a>
+                    <a href="#" class="sub-subcategory-link">Implementos</a>
+                    <a href="#" class="sub-subcategory-link">Entrenamiento</a>
+                    <a href="#" class="sub-subcategory-link">Guantes de Bateo</a>
+                    <a href="#" class="sub-subcategory-link">Manillas</a>
+                    <a href="#" class="sub-subcategory-link">Pelotas</a>
+                    <a href="#" class="sub-subcategory-link">Equipo para Receptores</a>
+                    <a href="#" class="sub-subcategory-link">Uniformes</a>
+                    <a href="#" class="sub-subcategory-link">Tacos</a>
+                </div>
+            </div>
+            
+            <!-- Futbol -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Futbol</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Accesorios</a>
+                    <a href="#" class="sub-subcategory-link">Tacos & Taquillas</a>
+                    <a href="#" class="sub-subcategory-link">Balones</a>
+                    <a href="#" class="sub-subcategory-link">Entrenamiento</a>
+                    <a href="#" class="sub-subcategory-link">Uniformes</a>
+                </div>
+            </div>
+            
+            <!-- Boxeo -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Boxeo</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Botas de Boxeo</a>
+                    <a href="#" class="sub-subcategory-link">Entrenamiento</a>
+                    <a href="#" class="sub-subcategory-link">Guantes</a>
+                    <a href="#" class="sub-subcategory-link">Protectores</a>
+                    <a href="#" class="sub-subcategory-link">Sacos Y Stand</a>
+                    <a href="#" class="sub-subcategory-link">Vendas</a>
+                </div>
+            </div>
+            
+            <!-- Baloncesto -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">Baloncesto</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Accesorios</a>
+                    <a href="#" class="sub-subcategory-link">Balones</a>
+                    <a href="#" class="sub-subcategory-link">Entrenamiento</a>
+                    <a href="#" class="sub-subcategory-link">Uniformes</a>
+                    <a href="#" class="sub-subcategory-link">Tableros</a>
+                </div>
+            </div>
+            
+            <!-- MMA -->
+            <div class="subcategory-item">
+                <div class="subcategory-header">
+                    <span class="subcategory-title">MMA</span>
+                    <span class="subcategory-arrow">▼</span>
+                </div>
+                <div class="sub-subcategories">
+                    <a href="#" class="sub-subcategory-link">Entrenamiento</a>
+                    <a href="#" class="sub-subcategory-link">Protectores</a>
+                    <a href="#" class="sub-subcategory-link">Guantes</a>
+                    <a href="#" class="sub-subcategory-link">Sacos & Stands</a>
+                    <a href="#" class="sub-subcategory-link">Vendas</a>
+                </div>
+            </div>
+            
+            <!-- Deportes sin subcategorías -->
+            <a href="#" class="category-simple">Atletismo</a>
+            <a href="#" class="category-simple">Ciclismo</a>
+            <a href="#" class="category-simple">Futbol Americano</a>
+            <a href="#" class="category-simple">Natación</a>
+            <a href="#" class="category-simple">Padel y Pickleball</a>
+            <a href="#" class="category-simple">Ping Pong</a>
+            <a href="#" class="category-simple">Tenis</a>
+            <a href="#" class="category-simple">Voleibol</a>
+        </div>
+    </div>
+<!-- HAVAIANAS -->
+    <div class="category-main">
+        <div class="category-header">
+            <div class="category-icon-title">
+                <span class="category-icon">🩴</span>
+                <span class="category-title">Havaianas</span>
+            </div>
+            <span class="category-arrow">▼</span>
+        </div>
+        <div class="subcategories">
+            <a href="#" class="category-simple">Hombres</a>
+            <a href="#" class="category-simple">Mujeres</a>
+            <a href="#" class="category-simple">Niños</a>
+            <a href="#" class="category-simple">Unisex</a>
+        </div>
+    </div>
+
+    <!-- LO MÁS NUEVO -->
+    <div class="category-main">
+        <div class="category-header">
+            <div class="category-icon-title">
+                <span class="category-icon">🔥</span>
+                <span class="category-title">Lo Más Nuevo</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- OFERTAS -->
+    <div class="category-main">
+        <div class="category-header">
+            <div class="category-icon-title">
+                <span class="category-icon">📢</span>
+                <span class="category-title">Ofertas</span>
+            </div>
+        </div>
+    </div>
+</nav>
+        
+    </aside>
+
+    <!-- ==================== VIDEO HERO ==================== -->
+    <section class="video-hero">
+        <video 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            class="hero-video"
+        >
+            <source src="hero-video.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        
+        <!-- Overlay oscuro -->
+        <div class="video-overlay"></div>
+        
+        <!-- Contenido sobre el video -->
+        <div class="hero-content">
+            <h1 class="hero-title">EQUIPAMIENTO PROFESIONAL</h1>
+            <p class="hero-subtitle">Para atletas que buscan lo mejor</p>
+            <a href="#tienda" class="hero-button">
+                <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                TIENDA
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORÍAS PRINCIPALES ==================== -->
+    <section class="categories-grid">
+        <h2 class="section-title">COMPRA POR CATEGORÍA</h2>
+        
+        <div class="grid-container">
+            
+            <!-- Crossfit -->
+            <a href="#crossfit" class="category-card">
+                <img src="cat-crossfit.webp" alt="Crossfit y Gym" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <h3 class="category-name">CROSSFIT & GYM</h3>
+                    <span class="category-button">EXPLORAR →</span>
+                </div>
+            </a>
+            
+            <!-- Deportes -->
+            <a href="#deportes" class="category-card">
+                <img src="cat-deportes.jpeg" alt="Deportes" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <h3 class="category-name">DEPORTES</h3>
+                    <span class="category-button">EXPLORAR →</span>
+                </div>
+            </a>
+            
+            <!-- Moda Deportiva -->
+            <a href="#moda" class="category-card">
+                <img src="cat-moda.png" alt="Moda Deportiva" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <h3 class="category-name">MODA DEPORTIVA</h3>
+                    <span class="category-button">EXPLORAR →</span>
+                </div>
+            </a>
+            
+            <!-- Uniformes -->
+            <a href="#uniformes" class="category-card">
+                <img src="cat-uniformes.webp" alt="Uniformes Personalizados" class="category-image">
+                <div class="category-overlay"></div>
+                <div class="category-content">
+                    <h3 class="category-name">UNIFORMES</h3>
+                    <span class="category-button">EXPLORAR →</span>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- ==================== CONTENT AREA ==================== -->
+    <div class="content-area">
+        <div class="placeholder-text">
+            📱 Aquí comenzarán las siguientes secciones<br>
+            (Hero Carousel, Categorías destacadas, Productos, etc.)
+        </div>
+    </div>
+    <script src="scripts.js" defer></script>
+    <!-- 
+    ==================== NOTAS DE PERSONALIZACIÓN ====================
+    
+    1. COLORES:
+       - Rojo principal: #c8102e (busca y reemplaza en CSS)
+       - Degradado botones: linear-gradient(135deg, #d41e3a 0%, #a8182a 100%)
+       
+    2. MENÚ HORIZONTAL:
+       - Para agregar/quitar items, edita la sección .menu-items
+       - Los botones tienen scroll automático en móvil
+       
+    3. SIDEBAR:
+       - Cada categoría principal tiene class="category-main"
+       - Las subcategorías tienen class="subcategory-item"
+       - Links finales tienen class="sub-subcategory-link" o "category-simple"
+       
+    4. ICONOS DE CATEGORÍAS:
+       - Cambiar emojis por íconos si prefieres
+       - O usar imágenes: <img src="icono.png" class="category-icon">
+       
+    5. ANIMACIONES:
+       - Transiciones CSS smooth en 0.3s
+       - Acordeones con max-height para animación fluida
+       
+    6. PRÓXIMOS PASOS:
+       - Hero Carousel
+       - Grid de categorías destacadas
+       - Productos destacados
+       - Footer
+       
+    ==================== ESTRUCTURA DE URLS ====================
+    Todos los links tienen href="#" como placeholder.
+    Reemplaza con tus URLs reales:
+    
+    - Categorías principales: /categoria/gym-fitness
+    - Subcategorías: /categoria/gym-fitness/crossfit
+    - Productos: /categoria/gym-fitness/crossfit/kettlebells
+    
+    ==================== INTEGRACIÓN WORDPRESS ====================
+    Este HTML puede convertirse fácilmente a:
+    - Menú de WordPress (wp_nav_menu)
+    - Categorías de WooCommerce
+    - Custom Post Types
+    
+    Para WordPress, reemplazarás los links estáticos por:
+    <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+    -->
+
+</body>
+</html>
